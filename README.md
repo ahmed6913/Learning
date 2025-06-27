@@ -1,3 +1,3 @@
 # Learning
 
-Programming languages - C/C++ JavaScript Typescript Solidity  
+Programming languages - C/C++, JavaScript, Typescript, Solidity  
