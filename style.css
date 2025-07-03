@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    background-color: rgb(144, 15, 15);
+    text-size-adjust: 12px;
+
+}
+
+div{
+    text-align: center;
+}
+
+button{
+    size: 100px;
+    font-size: xx-large;
+}
+
+form{
+    font-size: larger;
+}
