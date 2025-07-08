@@ -16,7 +16,7 @@ Programming languages - C/C++, JavaScript, Typescript, Solidity, Go
 
 git config --global user.name "Your Name"         # 👤 Set your Git username
 git config --global user.email "you@example.com"  # 📧 Set your Git email
-git config --list                             # 📃 Show current config
+git config --list                                 # 📃 Show current config
 
 📁 Repository Basics
 
