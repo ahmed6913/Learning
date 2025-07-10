@@ -37,6 +37,7 @@ This guide lists useful Windows Command Prompt (CMD) commands every developer sh
 | `type filename.txt`              | Display content of a text file           |
 | `echo Hello > file.txt`          | Write text to a file (overwrite)         |
 | `echo More >> file.txt`          | Append text to a file                    |
+to create a file use <echo> file name
 
 ---
 
