@@ -111,6 +111,7 @@ await uploadBytes(storageRef, file);
 const url = await getDownloadURL(storageRef);
 
 ## ✉️ Firebase Cloud Messaging (FCM)
+
 Used for push notifications
 
 Requires Service Worker on web
@@ -147,17 +148,17 @@ firebase init emulators
 firebase emulators:start
 Emulates:
 
-Firestore
+## Firestore
 
-Auth
+- Auth
 
-Functions
+- Functions
 
-Hosting
+- Hosting
 
-Realtime DB
+- Realtime DB
 
-Great for local testing before deploying.
+- Great for local testing before deploying.
 
 
 ## 🔁 Firebase Functions (Cloud Functions)
@@ -222,20 +223,4 @@ Use Emulator Suite for local testing
 
 Set up billing for production features like phone auth or FCM
 
-💾 Save this file as README_FIREBASE.md in your repo or docs folder for quick access.
-
-
-
----
-
-Let me know if you'd like this exported as a downloadable `.md` or `.pdf` file, or need a `README_GO.md` version too!
-
-
-
-
-
-
-
-
-Ask ChatGPT
 
