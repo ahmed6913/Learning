@@ -60,6 +60,7 @@ signOut(auth);
 onAuthStateChanged(auth, user => {
   console.log(user ? "Logged in" : "Logged out");
 });
+
 🧰 Other Auth Methods
 Google Auth: GoogleAuthProvider
 
