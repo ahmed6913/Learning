@@ -41,10 +41,10 @@ Docker is a containerization platform that allows developers to package applicat
 ## Docker basics
 
 - docker build -t <image-name> .        # Build image from Dockerfile
-- docker images                          # List local images
+- docker images                         # List local images
 - docker run <image-name>               # Run container
 - docker run -d -p 3000:3000 <image>    # Run in detached mode with port mapping
-- docker ps                              # List running containers
+- docker ps                             # List running containers
 - docker stop <container-id>            # Stop a container
 - docker rm <container-id>              # Remove a container
 - docker rmi <image-id>                 # Remove an image
@@ -52,7 +52,7 @@ Docker is a containerization platform that allows developers to package applicat
 
 ## 🖼️ Managing Images
 
-docker pull <image>                   # Pull from DockerHub
+docker pull <image>                  # Pull from DockerHub
 docker tag <local> <username>/<repo> # Tag before push
 docker push <username>/<repo>        # Push to DockerHub
 docker rmi <image-id>                # Remove image
