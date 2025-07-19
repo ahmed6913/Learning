@@ -35,6 +35,7 @@ Docker is a containerization platform that allows developers to package applicat
 - Install and verify:
   ```bash
   docker --version
+  docker version
 
 
 ```bash
