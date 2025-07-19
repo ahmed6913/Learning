@@ -12,7 +12,10 @@ npm install -g firebase-tools
 
 ## 🚀 Firebase CLI Commands
 
-firebase login                     # Log in to Firebase
+
+firebase --version.               # To check firebase is installed/ version 
+
+firebase login                    # Log in to Firebase
 firebase init                     # Initialize project
 firebase deploy                   # Deploy to Firebase
 firebase emulators:start          # Start local emulator
