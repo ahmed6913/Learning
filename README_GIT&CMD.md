@@ -114,6 +114,8 @@ pause
 
 ```bash
 
+git --version                                     # To check if git is installed/ version 
+
 git config --global user.name "Your Name"         # 👤 Set your Git username
 git config --global user.email "you@example.com"  # 📧 Set your Git email
 git config --list                                 # 📃 Show current config
