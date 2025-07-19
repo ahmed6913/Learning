@@ -13,7 +13,8 @@ npm install -g firebase-tools
 ## 🚀 Firebase CLI Commands
 
 
-firebase --version.               # To check firebase is installed/ version 
+firebase --version                # To check firebase is installed/ version 
+firebase --info 
 
 firebase login                    # Log in to Firebase
 firebase init                     # Initialize project
