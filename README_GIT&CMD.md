@@ -1,6 +1,4 @@
 
-
----
 # 🖥️ Essential CMD Commands for Software Developers
 
 This guide lists useful Windows Command Prompt (CMD) commands every developer should know for file navigation, automation, networking, system tasks, and more.
