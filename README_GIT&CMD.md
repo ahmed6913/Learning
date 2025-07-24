@@ -104,7 +104,7 @@ pause
 
 # 🚀 Git & GitHub Commands Cheat Sheet
 
-> 📚 A quick and essential reference for learning Git and GitHub step by step.
+ 📚 A quick and essential reference for learning Git and GitHub step by step.
 
 ---
 
