@@ -168,8 +168,8 @@ git reflog                                        # 🧠 See all HEAD changes (r
 ```
 ✅ Best Practices
 
-📝 Write meaningful commit messages
-⚠️ Always git pull before pushing
-🧾 Use .gitignore to avoid tracking sensitive or irrelevant files
-🌲 Keep your branches clean and organized
+- 📝 Write meaningful commit messages
+- ⚠️ Always git pull before pushing
+- 🧾 Use .gitignore to avoid tracking sensitive or irrelevant files
+- 🌲 Keep your branches clean and organized
 
