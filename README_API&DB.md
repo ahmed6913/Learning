@@ -55,6 +55,8 @@ NoSQL databases store data in a non-relational, schema-less format. They are des
 
 ---
 
+- use commands or GUI for NoSQL db 
+
 ## 🧪 MongoDB Commands (Document DB)
 
 ```bash
