@@ -220,7 +220,7 @@ Test rules using the Firebase Emulator Suite.
 -💻 Official SDKs
 ```
 ## ✅ Pro Tips
-```bash
+
 - Use .env for sensitive keys (via Vite/Next.js)
 - Use Firestore indexes for advanced queries
 - Combine Firebase with React Query or SWR for caching
