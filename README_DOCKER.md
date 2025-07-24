@@ -28,17 +28,18 @@ Perfect for developers, DevOps engineers, or anyone working with containers.
 Docker is a containerization platform that allows developers to package applications with all dependencies into a standardized unit.
 
 ---
+- [Download Docker Desktop](https://www.docker.com/products/docker-desktop/)
+```
 
 ## ⚙️ Docker Installation
 
-- [Download Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - Install and verify:
-  ```bash
+  
   docker --version
   docker version
 
 
-```bash
+
 ## Docker basics
 
 - docker build -t <image-name> .        # Build image from Dockerfile
@@ -125,6 +126,7 @@ docker run -p 3000:80 yourname/myapp
 docker logs <container>
 docker inspect <container>
 docker exec -it <container> sh
+```
 
 ## 🧠 Best Practices
 
