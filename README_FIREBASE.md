@@ -22,6 +22,8 @@ firebase deploy                   # Deploy to Firebase
 firebase emulators:start          # Start local emulator
 firebase use --add                # Add project alias
 firebase logout                   # Log out
+
+npm run build                     # use this before pushing to exixting deployment project
 ```
 ## ⚙️ SDK Setup (Web)
 ```bash
