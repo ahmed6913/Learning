@@ -1,8 +1,4 @@
-# Learning
 
-Programming languages - C/C++, JavaScript, Typescript, Solidity, Go 
-
----
 # 🖥️ Essential CMD Commands for Software Developers
 
 This guide lists useful Windows Command Prompt (CMD) commands every developer should know for file navigation, automation, networking, system tasks, and more.
@@ -102,41 +98,36 @@ cd C:\MyApp
 start .
 pause
 
-
+```
 
 # 🚀 Git & GitHub Commands Cheat Sheet
 
-> 📚 A quick and essential reference for learning Git and GitHub step by step.
+ 📚 A quick and essential reference for learning Git and GitHub step by step.
 
 ---
 
 ## 🔧 Setup Commands
-
 ```bash
-
 git --version                                     # To check if git is installed/ version 
 
 git config --global user.name "Your Name"         # 👤 Set your Git username
 git config --global user.email "you@example.com"  # 📧 Set your Git email
 git config --list                                 # 📃 Show current config
-
+```
 📁 Repository Basics
-
-
+```bash
 git init                                          # 🆕 Create a new local Git repo
 git clone <repo-url>                              # 📥 Clone an existing repo
-
+```
 💾 Staging & Committing Changes
-
-
+```bash
 git status                                        # 🔍 Check status of files
 git add .                                         # ➕ Stage all changed files
 git add <file>                                    # 🎯 Stage specific file
 git commit -m "your message"                      # 💬 Commit with message
-
+```
 🌿 Branching & Merging
-
-
+```bash
 git branch                                        # 🌴 List all branches
 git branch <branch-name>                          # 🌱 Create a new branch
 git checkout <branch-name>                        # 🔁 Switch to a branch
@@ -149,34 +140,34 @@ git push -u origin main                           # 🚀 Push for the first time
 git push                                          # 🔼 Push commits to GitHub
 git pull                                          # 🔽 Pull latest changes
 git fetch                                         # 📡 Fetch without merging
-
+```
 🧹 Undo Mistakes
-
+```bash
 git restore <file>                                # ↩️ Undo changes to a file
 git reset --soft HEAD~1                           # ⏪ Undo last commit (keep changes)
 git reset --hard HEAD~1                           # 🧨 Undo commit and changes
 git clean -fd                                     # 🧹 Delete untracked files/folders
-
+```
 📂 Viewing History & Diffs
-
+```bash
 git log                                           # 🕓 Show commit history
 git log --oneline                                 # 🧾 Compact log
 git diff                                          # 🔍 Show file differences
-
+```
 🧑‍💻 GitHub CLI (Optional)
-
+```bash
 gh auth login                                     # 🔐 Login to GitHub via CLI
 gh repo create                                    # 📦 Create a new repo
 gh repo clone <user>/<repo>                       # 📥 Clone via GitHub CLI
-
+```
 🧠 Pro Tips
-
+```bash
 git reflog                                        # 🧠 See all HEAD changes (recover lost commits)
-
+```
 ✅ Best Practices
 
-📝 Write meaningful commit messages
-⚠️ Always git pull before pushing
-🧾 Use .gitignore to avoid tracking sensitive or irrelevant files
-🌲 Keep your branches clean and organized
+- 📝 Write meaningful commit messages
+- ⚠️ Always git pull before pushing
+- 🧾 Use .gitignore to avoid tracking sensitive or irrelevant files
+- 🌲 Keep your branches clean and organized
 

@@ -9,9 +9,9 @@
 
 ```bash
 npm install -g firebase-tools
-
+```
 ## 🚀 Firebase CLI Commands
-
+```bash
 
 firebase --version                # To check firebase is installed/ version 
 firebase --info 
@@ -23,8 +23,10 @@ firebase emulators:start          # Start local emulator
 firebase use --add                # Add project alias
 firebase logout                   # Log out
 
+npm run build                     # use this before pushing to exixting deployment project
+```
 ## ⚙️ SDK Setup (Web)
-
+```bash
 
 npm install firebase
 
@@ -48,9 +50,9 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const auth = getAuth(app);
 export const storage = getStorage(app);
-
+```
 ## 🔐 Firebase Authentication
-
+```bash
 // Signup
 createUserWithEmailAndPassword(auth, email, password);
 
@@ -64,16 +66,19 @@ signOut(auth);
 onAuthStateChanged(auth, user => {
   console.log(user ? "Logged in" : "Logged out");
 });
-
+```
 🧰 Other Auth Methods
-Google Auth: GoogleAuthProvider
+```bash
+- Google Auth: GoogleAuthProvider
 
-GitHub, Twitter, Facebook (enable in Firebase Console)
+- GitHub, Twitter, Facebook (enable in Firebase Console)
 
-Phone Auth (requires emulator or real device)
+- Phone Auth (requires emulator or real device)
+```
 
 ## 📦 Firestore (Database)
 
+```bash
 ✅ CRUD Operations
 
 import { collection, addDoc, getDocs, doc, updateDoc, deleteDoc } from 'firebase/firestore';
@@ -94,17 +99,17 @@ await updateDoc(doc(db, "users", "userId"), {
 
 // Delete
 await deleteDoc(doc(db, "users", "userId"));
-
+```
 ## 🔍 Real-time Listener
-
+```bash
 import { onSnapshot } from 'firebase/firestore';
 
 onSnapshot(collection(db, "users"), snapshot => {
   snapshot.docs.forEach(doc => console.log(doc.data()));
 });
-
+```
 ## 📁 Firebase Storage (Images, Files)
-
+```bash
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
 const storageRef = ref(storage, `images/${file.name}`);
@@ -114,29 +119,29 @@ await uploadBytes(storageRef, file);
 
 // Get URL
 const url = await getDownloadURL(storageRef);
-
+```
 ## ✉️ Firebase Cloud Messaging (FCM)
-
+```bash
 Used for push notifications
 
 Requires Service Worker on web
 
 Use getToken() and onMessage() for receiving messages
-
+```
 ## ⚙️ Firebase Hosting
-
+```bash
 🔧 Setup & Deploy
 
 firebase init hosting
 firebase deploy
-
+```
 ## 🔁 Emulate Locally
-
+```bash
 firebase emulators:start
-
+```
 ## 🔥 Firebase Realtime Database (Optional)
 
-
+```bash
 import { getDatabase, ref, set } from 'firebase/database';
 
 const db = getDatabase();
@@ -146,15 +151,15 @@ set(ref(db, 'users/' + userId), {
   username: "saim",
   email: "saim@example.com"
 });
-
+```
 ## 🧪 Firebase Emulator Suite
-
+```bash
 firebase init emulators
 firebase emulators:start
 Emulates:
-
+```
 ## Firestore
-
+```bash
 - Auth
 
 - Functions
@@ -165,9 +170,9 @@ Emulates:
 
 - Great for local testing before deploying.
 
-
+```
 ## 🔁 Firebase Functions (Cloud Functions)
-
+```bash
 firebase init functions
 cd functions
 npm install
@@ -177,17 +182,17 @@ firebase deploy --only functions
 exports.helloWorld = functions.https.onRequest((req, res) => {
   res.send("Hello from Firebase!");
 });
-
+```
 ## 📊 Firebase Analytics
-
+```bash
 Enabled by default in Firebase Console
 
 Use logEvent('event_name') in frontend (Firebase SDK)
 
 Works well with Google Analytics dashboard
-
+```
 ## 🔒 Firebase Security Rules
-
+```bash
 🔐 Firestore Example
 
 rules_version = '2';
@@ -199,9 +204,9 @@ service cloud.firestore {
   }
 }
 Test rules using the Firebase Emulator Suite.
-
+```
 ##🧰 Useful Tools & Links
-
+```bash
 -🔎 Firebase Console
 
 -🧪 Emulator Docs
@@ -215,17 +220,13 @@ Test rules using the Firebase Emulator Suite.
 -🔧 Functions Docs
 
 -💻 Official SDKs
-
+```
 ## ✅ Pro Tips
 
-Use .env for sensitive keys (via Vite/Next.js)
-
-Use Firestore indexes for advanced queries
-
-Combine Firebase with React Query or SWR for caching
-
-Use Emulator Suite for local testing
-
-Set up billing for production features like phone auth or FCM
+- Use .env for sensitive keys (via Vite/Next.js)
+- Use Firestore indexes for advanced queries
+- Combine Firebase with React Query or SWR for caching
+- Use Emulator Suite for local testing
+- Set up billing for production features like phone auth or FCM
 
 
