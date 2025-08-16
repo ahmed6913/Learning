@@ -8,6 +8,8 @@
 
 - [Docker](README_DOCKER.md)
 
+- [CI/CD Pipeline](README_CICD_PIPELINE.md)
+
 - [db](README_DB.md)
 
 
