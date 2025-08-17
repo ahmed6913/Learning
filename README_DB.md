@@ -173,8 +173,8 @@ FOREIGN KEY (user_id) REFERENCES users(id);   -- Add a foreign key
 
 
 ```
-## 🤝 Joins
-Join multiple tables based on relationships.
+## 🤝 Joins & union
+Join multiple tables based on relationships. & union
 
 ```sql
 -- INNER JOIN: Matches rows in both tables
@@ -191,6 +191,19 @@ LEFT JOIN orders ON users.id = orders.user_id;
 SELECT users.name, orders.id
 FROM users
 RIGHT JOIN orders ON users.id = orders.user_id;
+
+-- union
+Query for union
+SELECT Name FROM Employees_US
+UNION
+SELECT Name FROM Employees_UK;
+
+Query for union all 
+SELECT Name FROM Employees_US
+UNION ALL 
+SELECT Name FROM Employees_UK;
+
+
 
 ```
 ## 🧠 Subqueries
@@ -255,18 +268,11 @@ DROP INDEX idx_name ON users;           -- Remove index
 
 
 ```
-## 🔁 Transactions
-Group multiple queries as one atomic unit.
-```sql
-START TRANSACTION;
-UPDATE accounts SET balance = balance - 100 WHERE id = 1;
-UPDATE accounts SET balance = balance + 100 WHERE id = 2;
-COMMIT;                         -- Save changes
-ROLLBACK;                       -- Undo if error occurs
-```
+
 ## 📋 Views
 Save complex queries as virtual tables.
-```sql
+```
+
 CREATE VIEW user_emails AS
 SELECT name, email FROM users;
 
