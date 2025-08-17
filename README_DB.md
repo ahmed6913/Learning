@@ -270,12 +270,20 @@ DROP INDEX idx_name ON users;           -- Remove index
 ```
 
 ## 📋 Views
-Save complex queries as virtual tables.
-```
+Save complex queries as virtual tables not real.
 
-CREATE VIEW user_emails AS
-SELECT name, email FROM users;
+What is a View in SQL?
 
+- A View is a virtual table in SQL.
+- It does not store data physically.
+- Instead, it stores a SQL query that you can use as if it were a table.
+- Every time you access the view, SQL runs the underlying query and shows the result.
+  
+```sql
+
+CREATE VIEW view_name AS
+SELECT column1, column2, ...
+FROM table_name;
 
 ```
 
